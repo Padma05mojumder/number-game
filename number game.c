@@ -2,7 +2,7 @@
 #include<stdlib.h>
 int main()
 {
-    int a,b,f=0;char ch;
+    int a,b,f;char ch;
     printf("\t\t\t\t\t\t\t\t\t ***NUMBER GAME***");
     printf("\n\n Welcome to 'NUMBER GAME'.\n RULES: There are three levels in the game:-EASY, MEDIUM, HARD.You can choose as you like.Here is your opponent,'Generator'!");
     printf("\n It will think about a number and you need to guess it.You can choose your level.");
@@ -27,6 +27,7 @@ int main()
             a=(rand()%8)+1;
             printf("\n Enter Number: ");
             scanf("%d",&b);
+            f=0;
             if(a==b)
            { f++;
             goto check;
@@ -54,6 +55,7 @@ int main()
             a=(rand()%19)+1;
             printf("\n Enter Number: ");
              scanf("%d",&b);
+            f=0;
             if(a==b)
            { f++;
             goto check1;
@@ -82,6 +84,7 @@ int main()
             a=(rand()%99)+1;
             printf("\n Enter Number: ");
              scanf("%d",&b);
+            f=0;
            if(a==b)
            { f++;
             goto check2;
